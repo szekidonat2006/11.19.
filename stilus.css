@@ -1,3 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 figure img{
     width: 200px;
     height: auto;
@@ -11,4 +18,71 @@ figure img{
 #henry picture img{
     width: 100px;
     height: auto;
+}
+
+h1{
+    color: #008768;
+}
+
+nav{
+    background-color: #008768;
+}
+
+a{
+    color: #70C9B5;
+}
+
+nav ol{
+    list-style-type: none;
+    grid-area: na;
+}
+
+nav ol li{
+    padding-right: 10px;
+    display: inline;
+}
+
+nav{
+    padding: 10px;
+    display: block;
+}
+
+main{
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas: 
+    'he he he'
+    'na na na '
+    'k k k'
+    'fo fo fo'
+    ;
+}
+
+h1, h2{
+    margin-left: 10px;
+}
+
+figure{
+    grid-area: fi;
+}
+
+header{
+    grid-area: he;
+}
+
+footer{
+    grid-area: fo;
+}
+
+#bal{
+    grid-area: bt;
+}
+
+#fotartalom{
+    grid-area: k;
+    display: grid;
+    grid-template-areas: 
+    'bt bt fi';
 }
